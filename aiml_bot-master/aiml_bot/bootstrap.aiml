@@ -1,0 +1,35 @@
+<aiml version="1.0">
+
+    <category>
+    <pattern>LOAD STD AIML</pattern>
+    <template>
+    <learn>standard/std-*.aiml</learn>
+    </template>
+    </category>
+
+    <category>
+    <pattern>LOAD DEV AIML</pattern>
+    <template>
+    <!-- Load standard AIML set -->
+    <learn>standard/dev-*.aiml</learn>
+    </template>
+    </category>
+
+    <category>
+    <pattern>LOAD * AIML LIST</pattern>
+    <template>
+    <learn><star/>/*.aiml</learn>
+    </template>
+    </category>
+
+    <category>
+    <pattern>LOAD ALL AIML</pattern>
+    <template>
+    <!-- Load standard AIML set -->
+    <learn>*/*.aiml</learn>
+    </template>
+    </category>
+
+    <!-- TODO: Commands to load and save the brain. -->
+
+</aiml>
